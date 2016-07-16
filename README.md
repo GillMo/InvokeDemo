@@ -1,6 +1,19 @@
 # InvokeDemo
 自定义注解替换findViewById setContentView
 
+初始化
+
+public class BaseActivity extends AppCompatActivity{
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        InjectUtils.inject(this);
+    }
+}
+
+具体使用
+
 
 @ContentView(R.layout.activity_main)
 
