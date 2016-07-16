@@ -1,7 +1,9 @@
 # InvokeDemo
 自定义注解替换findViewById setContentView
 
+
 @ContentView(R.layout.activity_main)
+
 public class MainActivity extends BaseActivity {
 
     @ViewInject(R.id.annotionTextView)
